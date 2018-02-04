@@ -1,0 +1,117 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{gensymb}
+\usepackage{siunitx}
+\usepackage{authblk}
+
+\newgeometry{top=2cm, bottom=2cm}
+
+
+
+\title{\vspace{-1.0cm}Standard amine-thiol solution process: \\Thiourea/Cysteamine}% \\ DOI:eeee}
+
+\author[]{Lewis Wright}
+\affil[]{Centre for Renewable Energy Systems Technology (CREST), \newline Wolfson School of Mechanical, Electrical and Manufacturing Engineering, \newline Loughborough University, Loughborough, Leicestershire, \newline United Kingdom, LE11 3TU}
+\affil[]{Email: L.Wright2@lboro.ac.uk}
+\affil[]{ORCID: 0000-0002-3940-6070}
+
+%$^*$ Corresponding email: L.Wright2@lboro.ac.uk
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Back contact preparation}
+TBC
+
+\section{Solution preparation}
+In air, to an empty vial:
+\begin{itemize}
+    \item Add 10ml DI water
+    \item Add 1g cysteamine; leave to dissolve (approx. 1 min)
+    \item Add 1g thiourea; leave to dissolve (approx. 5 mins)
+    \item Add 0.143g Cu(II)O (\num{1.8e-3}mol)
+    \item Add 0.098g ZnO (\num{1.2e-3}mol)
+    \item Add 0.215g SnSO$_4$ (\num{1.0e-3}mol)
+    \item Leave to dissolve - usable within 2-4 hours depending on mixing speed, typically left overnight
+    \item Dilute with:
+    \begin{itemize}
+        \item 30ml DI water
+        \item 4g thiourea
+    \end{itemize}
+\end{itemize}
+
+\newpage
+\section{Deposition}
+Deposit onto one 50x50mm Mo substrate using an ultrasonic nozzle. 
+\\Deposition conditions:
+\begin{itemize}
+    \item Flow rate - 1.5ml/min
+    \item Stage speed - 40mm/s
+    \item Layers - 12
+    \item (Atomisation) power - 4.5W
+    \item (Directional) gas pressure - 6L/min (nitrogen)
+    \item Hotplate set point - 350\degree C
+    \item Dwell between layers - 60s
+    \item Nozzle-hotplate distance - $\sim$5.5cm
+    \item Post-deposition anneal - 3mins
+\end{itemize}
+
+
+\section{Selenisation}
+Processes two 25x25mm units.
+\begin{itemize}
+    \item Load samples into graphite box with 12 Se pellets
+    \item Load graphite box into tube; pump down to singe-digits (torr)
+    \item Flush and purge with N$_2$ gas (2min flow)
+    \item Selenisation conditions:
+    \begin{itemize}
+        \item Starting pressure - 80Torr
+        \item Duration - 35mins (including ramp up)
+        \item Set temp - 575\degree C
+    \end{itemize}
+    \item At end of timer open furnace lid; leave to cool naturally (approx. 35mins)
+    \item Remove when below 50\degree C
+\end{itemize}
+
+\newpage
+\section{CdS buffer layer}
+Bath samples as soon as possible after removing from vacuum.
+\begin{itemize}
+    \item Set circulating bath to 70\degree C
+    \item Add 183ml DI water to a beaker; leave to warm
+    \item Add samples when water temp $\sim$55\degree C
+    \item When water temp reads 60\degree C:
+    \begin{itemize}
+        \item Add 32.6ml ammonium hydroxide (28-30 wt\% solution)
+        \item Add 25ml CdSO$_4$ (0.015M)
+        \item Start 15min timer
+    \end{itemize}
+    \item After 5mins add 12.5ml thiourea (1.5M)
+    \item When timer ends remove samples and rinse with DI water
+    \item Dry with compressed air
+\end{itemize}
+
+\section{Top contact}
+\begin{table}[h]
+%\centering
+\begin{tabular}{rll}
+                & iZnO                                                                & AZO      \\ \hline\hline
+Supplier & Plasmaterials & Innovnano \\
+Purity (\%) & 99.9999 & 99.9999 \\
+Power setpoint (W)  & 180    & 180     \\
+Target diameter (inches) & 3 & 3 \\
+Coat time (s)    & 900   & 5400    \\
+Gas flow (sccm)        & \begin{tabular}[c]{@{}l@{}}1\% O$_2$: 6 \\ Ar: 5\end{tabular} & Ar: 7
+\end{tabular}
+%\caption{Deposition details for RF sputtered front contact}
+\label{TCOdetails}
+\end{table}
+
+\section{Metal grids}
+TBC
+
+
+\end{document}
